@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+        <suite name="suite1">
+    <test name="datafromXML">
+
+        <parameter name="username" value="Admin"/>
+        <parameter name="password" value="admin"/>
+        <parameter name="browser" value="chrome"/>
+
+
+        <classes>
+            <class name="com.examples.dataproviders.DataFromXML"/>
+            </classes>
+    </test>
+
+
+</suite>

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 /**
  * Created by janesh on 7/7/2015.
  */
-public class DataFromXML {
+public class DataFromXML {       // run this using TestNG.xml file
 
     private WebDriver driver;
 
