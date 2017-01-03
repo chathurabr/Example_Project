@@ -1,4 +1,4 @@
-package com.datepikker;
+package com.examples.datepikker;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

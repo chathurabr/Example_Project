@@ -1,4 +1,4 @@
-package com.frame;
+package com.examples.frame;
 
 import jxl.Cell;
 import jxl.Workbook;

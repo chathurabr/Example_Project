@@ -1,4 +1,4 @@
-package com.frame;
+package com.examples.frame;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
