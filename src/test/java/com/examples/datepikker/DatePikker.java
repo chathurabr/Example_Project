@@ -36,7 +36,13 @@ public class DatePikker {
 
         driver.findElement(By.linkText("My Leave")).click();
 
+
         driver.findElement(By.xpath("//input[@id='calFromDate']")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         driver.findElement(By.linkText("28")).click();
 
 
