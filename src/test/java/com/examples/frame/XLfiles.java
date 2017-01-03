@@ -1,8 +1,10 @@
 package com.examples.frame;
 
 import jxl.Cell;
+import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,8 +13,8 @@ import java.io.IOException;
  * Created by Chathura on 12/30/2016.
  */
 public class XLfiles {
-    public static void main(String[] args) {
-
+    @Test
+    public void TestReadData(){
 
 // You need to use File class which will ask for file location.I specified  base// directory //using dot(.) operator then inside data folder I have testdata.xls// stored
 
@@ -25,11 +27,11 @@ public class XLfiles {
 
 // Workbook is loaded now we have to load sheet so using workbook object (wb) we// can call getSheet method which will take index as an argument and will load t//he sheet, we can also specify the sheetname also
 
-            jxl.Sheet sh1=    wb.getSheet(0);
+            Sheet sh1=    wb.getSheet(0);
 
 // Sheet is loaded then we have to read cell so using sh1 object call getCell me//thod which we take two arguments getCell(column,row)
 
-            Cell c1=sh1.getCell(0,0);
+            Cell  c1=sh1.getCell(0,0);
 
 //Cell is loaded then using getContents method we have  to extract the data usin//g getContents() methods
 // this method will always return you String.
@@ -50,5 +52,4 @@ public class XLfiles {
         catch (IOException e)
         {
             e.printStackTrace();
-        }
-}}
+        }}}
