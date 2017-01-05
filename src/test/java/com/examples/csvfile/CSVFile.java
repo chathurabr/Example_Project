@@ -1,14 +1,14 @@
 package com.examples.csvfile;
 
-import au.com.bytecode.opencsv.CSVReader;
+/*import au.com.bytecode.opencsv.CSVReader;
 
 import java.io.FileReader;
 import java.util.Iterator;
 import java.util.List;
 
-/**
+*//**
  * Created by Chathura on 1/3/2017.
- */
+ *//*
 public class CSVFile{
         public static void main(String[] args) throws Exception {
             // This will load csv file 
@@ -50,4 +50,4 @@ public class CSVFile{
 
         }
 
-}
+}*/
