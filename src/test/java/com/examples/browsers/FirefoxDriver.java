@@ -17,7 +17,8 @@ public class FirefoxDriver {
     public void Base (){
 
 
-        System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\executables\\geckodriver.exe");
+       // System.setProperty("webdriver.gecko.driver","C:\\geckodriver.exe");
         driver = new org.openqa.selenium.firefox.FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 

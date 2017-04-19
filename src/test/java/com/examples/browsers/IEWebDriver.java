@@ -15,7 +15,8 @@ public class IEWebDriver {
     @Test
     public void base () {
 
-        System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\executables\\IEDriverServer.exe");
+        //System.setProperty("webdriver.ie.driver", "C:\\IEDriverServer.exe");
         driver = new InternetExplorerDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 

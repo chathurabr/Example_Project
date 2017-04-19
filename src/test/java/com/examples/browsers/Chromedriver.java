@@ -14,7 +14,8 @@ public class Chromedriver {
 
     @Test
     public void base() {
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\executables\\chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
